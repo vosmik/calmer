@@ -1,31 +1,3 @@
-<% if false %>
-<div class="header">
-	<div class="inner">
-		<div class="header_nav">
-			<%= link_to "calmer", root_path, :class => current_class?(root_path) %>
-			<span class="inactive">blog</span>
-			<span class="inactive">me</span>
-		</div>
-	</div>
-	<div class="logo">
-		<%= link_to root_path do %>
-			<%= image_tag "logos/logo_small_green" %>
-		<% end %>
-	</div>
-	<div class="me">
-		<div class="my_profile">
-			<div class="avatar">
-				<%= image_tag "vosmik" %>
-			</div>
-			<div class="body">
-				<a href="">Contact me</a><br/>
-				<a href="">Github</a><br/>
-			</div>
-		</div>
-	</div>
-</div>
-<% end %>
-
 <div class="header">
 	<div class="header_container">
 		<div class="header_left">
@@ -33,7 +5,7 @@
 				<%= link_to root_path do %>
 					<%= image_tag "logos/logo_small_green" %>
 				<% end %>
-	</div>
+			</div>
 		</div>
 		<div class="header_main">
 			<div class="ta_c">
@@ -53,8 +25,12 @@
 			<a href="" class="header_icon">
 				<%= image_tag "vosmik", :class =>"avatar"%>
 			</a>
-			<a href="" class="header_icon">b</a>
-			<a href="" class="header_icon">c</a>
+			<a target="_blank" href="https://github.com/vosmik" class="header_icon">
+				<%= image_tag "icons/github", :class => "github" %>
+			</a>
+			<a target="_blank" href="https://www.instagram.com/v8ickaa/" class="header_icon">
+				<%= image_tag "icons/instagram", :class => "linkedin" %>
+			</a>
 		</div>
 	</div>
 </div>

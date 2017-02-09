@@ -41,51 +41,6 @@ clear: both;
 		position: absolute;
 		top: 0;
 	}
-	.me {
-		right: 10px;
-		width: 120px;
-		.my_profile {
-			position: relative;
-			padding: 10px 0;
-			opacity: 0.8;
-			transition: opacity 0.8s;
-			&:hover {
-				opacity: 1;
-			}
-			.avatar {
-				position: absolute;
-				top: 10px;
-				left: 0;
-				img {
-					width: 32px;
-					height: 32px;
-					border-radius: 100%;
-					float: left;
-					opacity: 0.9;
-				}
-			}
-			.body {
-				padding: 0 0 0 38px;
-				width: 100%;
-				a {
-					display: inline-block;
-					line-height: 16px;
-					float: left;
-				}
-			}
-		}
-	}
-	.inner {
-		position: relative;
-		top: 0;
-		max-width: 620px;
-		margin: 0 auto;
-		padding: 10px 20px;
-		border-radius: 0 0 18px 18px;
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-		background: #fff;
-		
-	}
 }
 .header_container {
 	max-width: 1000px;
@@ -128,6 +83,10 @@ clear: both;
 		width: 100%;
 		border-radius: 100%;
 		float: left;
+	}
+	img.github, img.linkedin {
+		width: 16px;
+		margin-top: 8px;
 	}
 }
 .header_icon:first-child {
