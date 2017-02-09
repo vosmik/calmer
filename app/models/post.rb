@@ -4,7 +4,7 @@ class Post
 	base_uri 'https://api.500px.com/v1/photos'
 	default_params 	only: "nature", rpp: "12", 
 					image_size: "600", 
-					consumer_key: Rails.application.secrets.px_consumer_key
+					consumer_key: ENV["PX_CONSUMER_KEY"]
 
 	def self.for feature
 		get("", query: {feature: feature}, verify: false).parsed_response
