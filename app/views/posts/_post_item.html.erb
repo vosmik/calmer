@@ -1,0 +1,22 @@
+<% user = post["user"] %>
+<div class="post_item">
+	<div class="post_header">
+		<div class="post_profile">
+			<div class="avatar">
+				<%= image_tag user["userpic_url"] %>
+			</div>
+			<div class="body">
+				<a href=""><%= user["fullname"] %></a><br/>
+				
+				<span><%= owner_from(user["city"], user["country"]) %></span>
+			</div>
+		</div>
+	</div>
+	<div class="post_picture">
+		<%= image_tag post["image_url"] %>
+	</div>
+	<div class="post_details">
+		<h3 class="title mt_small"><%= post["title"] %></h3>
+		<p class="l"><%= post["description"] %></p>
+	</div>
+</div>

@@ -1,0 +1,14 @@
+<%= render "shared/home-header" %>
+
+<div class="posts_feed">
+	<div class="info_tab mt_small">
+		<h1>Hi there,</h1>
+		<p class="lighter mt_small">this is my personal site. I am building this site to try and learn Ruby on Rails 5 and things around. I will use public APIs to show nature's beauty (this is 500PX). I will be adding features in my free time.</p>
+		<p class="mt_small">Keep calmer :)</p>
+		<div class="info_tab_icon">
+			<%= image_tag "icons/hi_face" %>
+		</div>
+	</div>
+</div>
+
+<%= render partial: "posts/posts", locals: {posts: @posts} %>
