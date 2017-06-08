@@ -1,4 +1,4 @@
-# README
+# Calmer.co
 
 I started building this site to try and "re-learn" ruby and Ruby on Rails (5) after some time I wasn't working with it.
 
