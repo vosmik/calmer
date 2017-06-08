@@ -7,7 +7,6 @@ class PostsController < ApplicationController
   	feature = "fresh_today"  
     response = Post.for(feature)
   	@posts = response["photos"]
-  	#logger.info "this is response: #{@posts}"
   end
 
   def show

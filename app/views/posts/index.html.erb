@@ -1,14 +1,22 @@
 <%= render "shared/home-header" %>
+<%= render partial: "shared/mobile_footer" %>
 
-<div class="posts_feed">
-	<div class="info_tab mt_small">
-		<h1>Hi there,</h1>
-		<p class="lighter mt_small">this is my personal site. I am building this site to try and learn Ruby on Rails 5 and things around. I will use public APIs to show nature's beauty (this is 500PX). I will be adding features in my free time.</p>
-		<p class="mt_small">Keep calmer :)</p>
-		<div class="info_tab_icon">
-			<%= image_tag "icons/hi_face" %>
-		</div>
-	</div>
+<div class="posts_feed mt_header">
+    <div class="info_tab">
+        <h1 class="bold">Hi there,</h1>
+        <p class="lighter mt_small">I was about to build this site to try and "re-learn" Ruby on Rails(5) in my spare time. But at some point I came to realize that I don't want to jump on this ruby train again. </p>
+        <p class="lighter mt_small">So I am sorry that this is just a torso of what it should be. You can find <a href="https://github.com/vosmik/calmer" class="text-link">Github repository here</a>. Calmer is consuming <a href="https://github.com/500px/api-documentation" class="text-link">500PX' API</a>. It runs on free Heroku, so sorry for the performance :).</p>
+        <h3 class="mt_small bold">Shortly about me</h3>
+        <p class="lighter mt_small"> Somehow, Elixir (built on top of Erlang VM) got in my way for doing APIs and Ember.js on the frontend side and I really felt in love with both of them and especially (thanks to Elixir) I felt in love with functional programming.</p>
+
+        <p class="lighter mt_small">During my journey, I realized the potential of the "new" JavaScript (for both - frontend and backend) and I decided, for the first time in my live, to choose just this one JS thing and learn it well, together with React and hopefully React Native and Node.js.
+        </p> 
+        <p class="lighter mt_small">I really love doing frontend / UX jobs. I am a self learner, a passionate problem solver and full-time dreamer.</p>
+        <p class="mt_small bold">Keep calmer :)</p>
+        <div class="info_tab_icon">
+            <%= image_tag "icons/hi_face" %>
+        </div>
+    </div>
 </div>
 
 <%= render partial: "posts/posts", locals: {posts: @posts} %>

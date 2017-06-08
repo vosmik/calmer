@@ -1,2 +1,6 @@
 <%= render "shared/home-header" %>
-<%= render partial: "posts/posts", locals: {posts: @posts} %>
+<%= render partial: "shared/mobile_footer" %>
+
+<div class="mt_header">
+	<%= render partial: "posts/posts", locals: {posts: @posts} %>
+</div>

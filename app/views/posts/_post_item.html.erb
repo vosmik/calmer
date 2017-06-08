@@ -1,20 +1,24 @@
 <% user = post["user"] %>
+<% owner_from = owner_from(user["city"], user["country"]) %>
+
 <div class="post_item">
 	<div class="post_header">
 		<div class="post_profile">
 			<div class="avatar">
 				<%= image_tag user["userpic_url"] %>
 			</div>
-			<div class="body">
-				<a href=""><%= user["fullname"] %></a><br/>
-				
-				<span><%= owner_from(user["city"], user["country"]) %></span>
-			</div>
+			<a href="https://500px.com/<%= user["username"] %>" class="body">
+				<div><span class="bold"><%= user["fullname"] %></span> 
+          <% if owner_from != "" %>
+            <span class="from"> <%= owner_from(user["city"], user["country"]) %></span>
+          <% end %>
+        </div>
+			</a>
 		</div>
 	</div>
-	<div class="post_picture">
+	<a href="https://500px.com<%= post["url"] %>" class="post_picture">
 		<%= image_tag post["image_url"] %>
-	</div>
+	</a>
 	<div class="post_details">
 		<h3 class="title mt_small"><%= post["title"] %></h3>
 		<p class="l"><%= post["description"] %></p>

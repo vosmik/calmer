@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I started building this site to try and "re-learn" ruby and Ruby on Rails (5) after some time I wasn't working with it.
 
-Things you may want to cover:
+But at some point I came to realize that I don't want to jump on this ruby train again and chosen different stack for my carreer (JS, Elixir). So sorry, this is just a torso of what it should be.
 
-* Ruby version
+It runs on free Heroku instance, so sorry for long loading times.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can find more about me at [Calmer.co]("www.calmer.co")</a>.

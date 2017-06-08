@@ -1,37 +1,37 @@
 <div class="header">
-	<div class="header_container">
-		<div class="header_left">
-			<div class="header_logo">
-				<%= link_to root_path do %>
-					<%= image_tag "logos/logo_small_green" %>
-				<% end %>
-			</div>
-		</div>
-		<div class="header_main">
-			<div class="ta_c">
-				<div class="header_nav">
-					<%= link_to "calmer", root_path, :class => "active" %>
-					<span class="inactive">blog</span>
-				</div>
-				<div class="header_nav_second">
-					<%= link_to "new", root_path, :class => current_class?(root_path) %>
-					<%= link_to "popular", popular_path, :class => current_class?(popular_path) %>
-					<%= link_to "handpicked", handpicked_path, :class => current_class?(handpicked_path) %>
-				</div>
-			</div>
-			<div></div>
-		</div>
-		<div class="header_right">
-			<span class="header_icon">
-				<%= image_tag "vosmik", :class =>"avatar"%>
-			</span>
-			<a target="_blank" href="https://github.com/vosmik" class="header_icon">
-				<%= image_tag "icons/github", :class => "github" %>
-			</a>
-			<a target="_blank" href="https://www.instagram.com/v8ickaa/" class="header_icon">
-				<%= image_tag "icons/instagram", :class => "linkedin" %>
-			</a>
-		</div>
-	</div>
+  <div class="header_left">
+    <%= link_to root_path, :class=>"header_logo" do %>
+      <%= image_tag "logos/logo_small" %>
+    <% end %>
+  </div>
+
+  <div class="header_right">
+    <div class="header_link_holder">
+      <a target="_blank" href="https://github.com/vosmik" class="header_icon github">
+        <%= image_tag "icons/github", :class => "" %>
+      </a>
+    </div>
+    <div class="header_link_holder">
+      <a target="_blank" href="https://www.instagram.com/v8ickaa/" class="header_icon instagram">
+        <%= image_tag "icons/instagram", :class => "" %>
+      </a>
+    </div>
+    <div class="header_link_holder">
+      <a target="_blank" href="https://www.freecodecamp.com/vosmik" class="header_icon free_code_camp">
+        <%= image_tag "icons/freeCodeCamp", :class => "" %>
+      </a>
+    </div>
+  </div>
+
+  <div class="header_content">
+    <div class="tab_nav clearfix">
+      <a href="" class="active">Calmer</a>
+      <a href="" class="blank">Blog</a>
+    </div>
+    <div class="sub_nav">
+        <%= link_to "new", root_path, :class => current_class?(root_path) %>
+        <%= link_to "popular", popular_path, :class => current_class?(popular_path) %>
+        <%= link_to "handpicked", handpicked_path, :class => current_class?(handpicked_path) %>
+    </div>
+  </div>
 </div>
-<div class="header_clearfix"></div>
